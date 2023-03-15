@@ -12,11 +12,17 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.UpdateTimestamp;
 
+//indica ao spring que o objeto de postagem vai virar uma tabela no banco de dados
 @Entity
+
+//passar um nome para a tabela no banco de dados
 @Table(name = "tb_postagens")
 public class Postagem {
 
+	//indica a chave primaria da tabela de postagem
 	@Id
+	
+	//equivalente ao auto_incremente na criação da chave primaria
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
