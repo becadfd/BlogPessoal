@@ -1,0 +1,5 @@
+package org.generation.blogpessoal.configuration;
+
+public class SwaggerConfig {
+
+}
